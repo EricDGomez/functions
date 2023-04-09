@@ -1,0 +1,23 @@
+{
+  "name": "functions-solved",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-all": "vitest --run",
+    "test-1": "vitest --run e1.",
+    "test-2": "vitest --run e2.",
+    "test-3": "vitest --run e3.",
+    "test-4": "vitest --run e4.",
+    "test-5": "vitest --run e5."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vitest": "^0.28.3"
+  }
+}
