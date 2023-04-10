@@ -9,10 +9,9 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-function splitFirstAndLastNames(str) {
-  return str.split(' ');
-}
-
+var splitFirstAndLastNames = (str) => {
+  return str.split(" ");
+};
 
 /** =========================
  * The personAge() constant is assigned to a function, that takes an object of person Data as the argument.
@@ -20,10 +19,9 @@ function splitFirstAndLastNames(str) {
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
 
-const personAge = function(personObject) {
+var personAge = (personObject) => {
   return personObject.age;
-}
-
+};
 
 /** =========================
  * The isNameInArray function takes an array and string of name as the arguments.
@@ -32,10 +30,9 @@ const personAge = function(personObject) {
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
 
-const isNameInArray = function(arr, name) {
+var isNameInArray = (arr, name) => {
   return arr.includes(name);
-}
-
+};
 
 /** =========================
  * The logTimer function takes a number as the arguments.
@@ -44,24 +41,21 @@ const isNameInArray = function(arr, name) {
  * !!! Hint: There are two functions to refactor !!!
  */
 
-const logSecondsUpToMax = function(max) {
+const logSecondsUpToMax = (max) => {
   let i = 0;
-  const timer = setInterval(function() {
+  const timer = setInterval(() => {
     if (i < max) {
       console.log(++i);
     } else {
       clearInterval(timer);
     }
   }, 1000);
-}
-
-
+};
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-4"
 // If the test has all tests passed, switch to the next exercise file
 // If any of the tests fails, refactor the code and run the test command after you've fixed the function
-
 
 // Do not delete or change the lines beneath
 const f = {
@@ -69,5 +63,5 @@ const f = {
   personAge: personAge || undefined,
   isNameInArray: isNameInArray || undefined,
   logSecondsUpToMax: logSecondsUpToMax || undefined,
-}
-export { f }
+};
+export { f };
