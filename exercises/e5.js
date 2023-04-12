@@ -28,7 +28,7 @@ function getDiffTwentySeven(num) {
 
 // Your code goes here
 function sumOfTwoIntegers(num1, num2) {
-  if ((num1 = num2)) {
+  if (num1 == num2) {
     return 3 * (num1 + num2);
   } else {
     return num1 + num2;
@@ -46,7 +46,7 @@ function sumOfTwoIntegers(num1, num2) {
 
 // Your code goes here...
 function isOneOfThemOrTheirSumIsFourty(num1, num2) {
-  if (num1 || num2 == 40 || num1 + num2 == 40) {
+  if (num1 == 40 || num2 == 40 || num1 + num2 == 40) {
     return true;
   } else {
     return false;
