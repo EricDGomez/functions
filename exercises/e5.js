@@ -15,7 +15,7 @@ function getDiffTwentySeven(num) {
   if (num > 27) {
     return 2 * (num - 27);
   } else {
-    return num;
+    return 27 - num;
   }
 }
 
